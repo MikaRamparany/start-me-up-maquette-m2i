@@ -1,6 +1,6 @@
-#🚀 ECF - Start Me Up
-##🗓️ Jour 1 : Conception
-###Objectif :
+# 🚀 ECF - Start Me Up
+# #🗓️ Jour 1 : Conception
+### Objectif :
 Créer un site vitrine responsive pour le lancement d’un produit phare.
 
 Contenu attendu :
@@ -14,7 +14,7 @@ Zoning
 
 Maquettes pour chaque page
 
-#💻 Jour 2 : Intégration
-##Objectif :
+# 💻 Jour 2 : Intégration
+## Objectif :
 ### Objectif : 
 Développer la maquette en HTML/CSS (+ JavaScript si nécessaire) selon les livrables conçus la veille.
