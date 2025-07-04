@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Start Me Up</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a class="nav-logo" href="index.html">
+                    <div class="logo-icon">
+                        <img class="nav-logo" src="/assets/logo.svg" alt="Logo Start Me Up"/>
+                    </div>
+                </a>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="produits.html" class="nav-link">Produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html#equipe" class="nav-link">Notre équipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link active">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-cta">
+                    <a href="contact.html" class="btn btn-primary">Prendre RDV</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-contact">
+        <div class="container">
+            <h1 class="hero-title">Nous contacter ou prendre RDV</h1>
+            <p class="hero-subtitle">
+                Donec dignissim, odio ac imperdiet luctus, ante nisl accusam justo, et 
+                venenatis ante metus pellentesque sem.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-form-container">
+                <h2 class="form-title">Réservez un rendez-vous</h2>
+                <p class="form-subtitle">
+                    Pour que notre équipe puisse vous recontrter ou plus vite
+                </p>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="company">Nom complet (ou entreprise)</label>
+                            <input type="text" id="company" name="company" placeholder="ex: John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="product">Produit</label>
+                            <select id="product" name="product" required>
+                                <option value="">Sélectionner</option>
+                                <option value="mvp">MVP Booster Pack</option>
+                                <option value="pro">PRO</option>
+                                <option value="vip">VIP</option>
+                                <option value="devis">Devis personnalisé</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="ex: john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="availability">Disponibilité</label>
+                            <select id="availability" name="availability" required>
+                                <option value="">Sélectionner</option>
+                                <option value="morning">Matin</option>
+                                <option value="afternoon">Après-midi</option>
+                                <option value="evening">Soir</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <div class="phone-input">
+                                <select class="country-code">
+                                    <option value="+33">+33</option>
+                                    <option value="+1">+1</option>
+                                    <option value="+44">+44</option>
+                                </select>
+                                <input type="tel" id="phone" name="phone" placeholder="123456789" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message-type">Rédigez un message</label>
+                            <select id="message-type" name="message-type">
+                                <option value="">Sélectionner</option>
+                                <option value="question">Question</option>
+                                <option value="projet">Nouveau projet</option>
+                                <option value="info">Demande d'information</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet ou votre demande..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary form-submit">
+                        Valider maintenant →
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <h3>Notre adresse</h3>
+        <div class="map-container">
+           <iframe class="google-map"src="https://www.google.com/maps/embed?pb=!4v1751552709575!6m8!1m7!1sT3Y3arvhuVpx2cSwuDWUkg!2m2!1d48.86494578171114!2d2.31047400482621!3f9.352646!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="map-contact">
+            <p><span>Adresse:</span>91, Chemin des Bateliers - 81000 Albi  France</p>
+            <p><span>Téléphone:</span>+33 (0)5.39.90.39.35</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <img class="nav-logo" src="/assets/logo.svg" alt="Logo Start Me Up" href="/index.html"/>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>COMPANY</h4>
+                        <ul>
+                            <li><a href="#">Donec dignissim</a></li>
+                            <li><a href="#">Quaerat aperiam</a></li>
+                            <li><a href="#">Nam posuere</a></li>
+                            <li><a href="#">Aliquam facilisis</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>SERVICES</h4>
+                        <ul>
+                            <li><a href="#">Cras convallis</a></li>
+                            <li><a href="#">Vestibulum faucibus</a></li>
+                            <li><a href="#">Quisque lacinia tortor</a></li>
+                            <li><a href="#">Aliquam nec ex</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>RESSOURCES</h4>
+                        <ul>
+                            <li><a href="#">Suspendisse porttitor</a></li>
+                            <li><a href="#">Nam posuere</a></li>
+                            <li><a href="#">Curabitur egestas</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">f</a>
+                    <a href="#" class="social-link">in</a>
+                    <a href="#" class="social-link">t</a>
+                    <a href="#" class="social-link">@</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Start Me Up 2025</p>
+                <div class="footer-lang">
+                    <select>
+                        <option>Français - Fr</option>
+                        <option>English - En</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <!-- <script src="js/contact-form.js"></script> -->
+</body>
+</html>
