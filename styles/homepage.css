@@ -593,6 +593,7 @@
   background: var(--primary-color);
 }
 
+
 @media (max-width: 768px) {
   .hero-container {
     grid-template-columns: 1fr;
@@ -652,6 +653,19 @@
     gap: var(--spacing-lg);
   }
 
+  /* pour éviter les problèmes de conflits.. sur carousel et section portfolio */
+@media (min-width: 769px) {
+  .team-wrapper {
+    display: flex ;
+  }
+
+  .team-carousel {
+    display: none ;
+  }
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
 
 /*anim carousel*/
 
