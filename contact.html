@@ -58,83 +58,97 @@
     </section>
 
     <!-- Contact Form Section -->
-    <section class="contact-form-section">
-        <div class="container">
-            <div class="contact-form-container">
-                <h2 class="form-title">Réservez un rendez-vous</h2>
-                <p class="form-subtitle">
-                    Pour que notre équipe puisse vous recontrter ou plus vite
-                </p>
-                
-                <form class="contact-form" id="contact-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="company">Nom complet (ou entreprise)</label>
-                            <input type="text" id="company" name="company" placeholder="ex: John Doe" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="product">Produit</label>
-                            <select id="product" name="product" required>
-                                <option value="">Sélectionner</option>
-                                <option value="mvp">MVP Booster Pack</option>
-                                <option value="pro">PRO</option>
-                                <option value="vip">VIP</option>
-                                <option value="devis">Devis personnalisé</option>
-                            </select>
-                        </div>
-                    </div>
 
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="ex: john@example.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="availability">Disponibilité</label>
-                            <select id="availability" name="availability" required>
-                                <option value="">Sélectionner</option>
-                                <option value="morning">Matin</option>
-                                <option value="afternoon">Après-midi</option>
-                                <option value="evening">Soir</option>
-                            </select>
-                        </div>
-                    </div>
+<section class="contact-form-section">
+  <div class="container">
+    <div class="contact-form-container">
+      <h2 class="form-title">Réservez un rendez-vous</h2>
+      <p class="form-subtitle">
+        Pour que notre équipe puisse vous recontrter ou plus vite
+      </p>
 
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="phone">Téléphone</label>
-                            <div class="phone-input">
-                                <select class="country-code">
-                                    <option value="+33">+33</option>
-                                    <option value="+1">+1</option>
-                                    <option value="+44">+44</option>
-                                </select>
-                                <input type="tel" id="phone" name="phone" placeholder="123456789" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="message-type">Rédigez un message</label>
-                            <select id="message-type" name="message-type">
-                                <option value="">Sélectionner</option>
-                                <option value="question">Question</option>
-                                <option value="projet">Nouveau projet</option>
-                                <option value="info">Demande d'information</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet ou votre demande..."></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary form-submit">
-                        Valider maintenant →
-                    </button>
-                </form>
+      <form class="contact-form" id="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="company">Nom complet (ou entreprise)</label>
+            <input type="text" id="company" name="company" placeholder="ex: John Doe" required>
+          </div>
+          <div class="form-group">
+            <label>Produit</label>
+            <div class="dropdown" data-name="product">
+              <div class="dropdown-selected">Sélectionner</div>
+              <ul class="dropdown-list">
+                <li data-value="mvp">MVP Booster Pack</li>
+                <li data-value="pro">PRO</li>
+                <li data-value="vip">VIP</li>
+                <li data-value="devis">Devis personnalisé</li>
+              </ul>
+              <input type="hidden" name="product" required>
             </div>
+          </div>
         </div>
-    </section>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="ex: john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label>Disponibilité</label>
+            <div class="dropdown" data-name="availability">
+              <div class="dropdown-selected">Sélectionner</div>
+              <ul class="dropdown-list">
+                <li data-value="morning">Matin</li>
+                <li data-value="afternoon">Après-midi</li>
+                <li data-value="evening">Soir</li>
+              </ul>
+              <input type="hidden" name="availability" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Téléphone</label>
+            <div class="phone-input">
+              <div class="dropdown code-select" data-name="country-code">
+                <div class="dropdown-selected">+33</div>
+                <ul class="dropdown-list">
+                  <li data-value="+33">+33</li>
+                  <li data-value="+1">+1</li>
+                  <li data-value="+44">+44</li>
+                </ul>
+                <input type="hidden" name="country-code" value="+33">
+              </div>
+              <input type="tel" id="phone" name="phone" placeholder="123456789" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Rédigez un message</label>
+            <div class="dropdown" data-name="message-type">
+              <div class="dropdown-selected">Sélectionner</div>
+              <ul class="dropdown-list">
+                <li data-value="question">Question</li>
+                <li data-value="projet">Nouveau projet</li>
+                <li data-value="info">Demande d'information</li>
+              </ul>
+              <input type="hidden" name="message-type">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet ou votre demande..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary form-submit">
+          Valider maintenant →
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
 
     <!-- Map Section -->
     <section class="map-section">
