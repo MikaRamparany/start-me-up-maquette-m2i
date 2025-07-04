@@ -39,7 +39,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center ;
+  justify-content: space-evenly ;
 }
 
 .hero-title {
@@ -72,6 +72,7 @@
 
 /* Services Section */
 .services {
+  width: 100vw;
     padding: var(--spacing-3xl) 0;
     background: var(--white);
 }
@@ -655,6 +656,7 @@
 
   /* pour éviter les problèmes de conflits.. sur carousel et section portfolio */
 @media (min-width: 769px) {
+  
   .team-wrapper {
     display: flex ;
   }
@@ -663,7 +665,7 @@
     display: none ;
   }
   .portfolio-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(00px, 1fr));
   }
 }
 
