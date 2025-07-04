@@ -67,3 +67,41 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
+    //carousel des témoignages 
+
+    document.addEventListener("DOMContentLoaded", () => {
+  const carousel = document.getElementById("testimonials-carousel");
+  const slides = carousel.querySelectorAll(".testimonial-slide");
+  const dots = document.querySelectorAll(".dot");
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === index);
+    });
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
+    });
+
+    currentIndex = index;
+  }
+
+  function changeSlide(direction) {
+    let nextIndex = (currentIndex + direction + slides.length) % slides.length;
+    showSlide(nextIndex);
+  }
+
+  // Navigation buttons
+  document.querySelector(".testimonial-nav-btn.prev").addEventListener("click", () => changeSlide(-1));
+  document.querySelector(".testimonial-nav-btn.next").addEventListener("click", () => changeSlide(1));
+
+  // Dots navigation
+  dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => showSlide(i));
+  });
+
+
+});
+
