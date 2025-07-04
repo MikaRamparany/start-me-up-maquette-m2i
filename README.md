@@ -23,4 +23,4 @@ Développer la maquette en HTML/CSS (+ JavaScript si nécessaire) selon les livr
 
 
 ### Résultat Page Accueil responsive: voir le reste sur localhost
-<img src="assets/captureecran.gif" width="400"/>
+<img src="assets/captureecran.gif" width="200" height="500"/>
