@@ -334,17 +334,24 @@
     margin-top: var(--spacing-lg);
 }
 
-.process-dots .dot {
-    width: 12px;
-    height: 12px;
+.process-dot {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    color: var(--gray-700);
+    background-color: var(--gray-200);
     border-radius: 50%;
-    background: var(--gray-300);
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
 }
 
-.process-dots .dot.active {
-    background: var(--primary-color);
+.process-dot.active {
+    background-color: var(--primary-color);
+    color: white;
 }
 
 /* Responsive */
