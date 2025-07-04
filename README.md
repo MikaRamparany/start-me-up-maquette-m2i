@@ -23,4 +23,4 @@ Développer la maquette en HTML/CSS (+ JavaScript si nécessaire) selon les livr
 
 
 ### Résultat Page Accueil responsive: voir le reste sur localhost
-<video src="assets/capture_video.mp4" width="320" height="240" controls></video>
+![Demo](assets/captureecran.gif)
